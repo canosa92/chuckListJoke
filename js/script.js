@@ -24,8 +24,8 @@ fetchJoke.addEventListener('click',()=>{
         })
 })
 
-const guardar=()=>{
-    chisteGuardar.push()
+const guardar=(ele)=>{
+    chisteGuardar.push(ele)
     localStorage.setItem('chiste',JSON.stringify(chisteGuardar))
     jokeList.innerHTML=chisteGuardar
 }
